@@ -1,3 +1,10 @@
+
+@import '_blog1.scss';
+@import '_blog2.scss';
+@import '_page2.scss';
+@import '_shop.scss';
+@import '_profile.scss';
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +19,153 @@ body {
 a {
     text-decoration: none;
 }
+
+
+
+#platform {
+    background-color: #F6F7F9;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+    .dot-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 750px;
+        height: 300px;
+        animation: myFrame 1s infinite;
+
+
+        @keyframes myFrame {
+
+
+            0% {
+
+                transform: translateY(-5px);
+            }
+
+            100% {
+
+                transform: translateY(5px);
+            }
+        }
+
+    }
+
+    .p-left {
+        padding-top: 47%;
+        padding-right: 40px;
+        text-align: left;
+
+        h1 {
+            font-size: 50px;
+            color: #072F60;
+            font-weight: 600;
+        }
+
+        span {
+            color: #415674;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .button {
+            margin-top: 20px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 4px;
+                color: white;
+                background-color: #3BBCA7;
+                padding: 16px 26px 16px 26px;
+
+                &:hover {
+                    background-color: #072F60;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .p-right {
+        margin: 20px 0 0 70px;
+
+    }
+}
+
+// platform end 
+// 000000000000000000000000000000000
+
+#topics {
+    background-color: #F6F7F9;
+
+    .box-text {
+
+        padding-top: 40px;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #072F60;
+        }
+
+
+    }
+
+    .boxes {
+        margin-top: 40px;
+
+        .box {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 15px;
+            height: 90px;
+
+            &:hover {
+                background-color: #101C32;
+                transition: 0.5s ease-in-out;
+
+                .box-right {
+
+                    h5 {
+                        color: white;
+
+                    }
+                }
+            }
+
+            .box-left {
+
+                width: 20%;
+
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+            .box-right {
+                width: 80%;
+                padding: 16px;
+
+                h5 {
+                    color: #072F60;
+                    font-weight: 500;
+
+                }
+            }
+        }
+    }
+}
+
+// topics end 
+// 000000000000000000000000000000000000
+
 
 
 ///header start>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -188,7 +342,7 @@ a {
 }
 
 .head-right-click {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0%;
     z-index: 10;
@@ -198,7 +352,7 @@ a {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: transparent;
 
     &.right-click-active {
         opacity: 1;
@@ -209,7 +363,7 @@ a {
         width: 100%;
         height: 100%;
         background-color: transparent;
-        position: relative;
+        position: fixed;
         z-index: 9999;
 
 
@@ -219,6 +373,7 @@ a {
         position: absolute;
         width: 400px;
         background-color: #fff;
+        box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.425);
         height: 180px;
         right: 20px;
         transition: 0.3s ease-in-out;
@@ -903,6 +1058,7 @@ a {
 
     .tabs{
         // border: 2px solid red;
+        margin-bottom: 20px;
         display: flex;
         justify-content: flex-end;
         transition: 0.3s ease-in-out;
@@ -928,8 +1084,9 @@ a {
     }
 
 
-    figure{
+    .col-lg-3{
         transform: scale(1);
+        // margin-right: 0px;
         transition: 0.3s ease-in-out;
 
         &.figure-active{
@@ -942,6 +1099,7 @@ a {
     .item {
         background-color: #fff;
         border-radius: 10px;
+        // margin-right: 4px;
         overflow: hidden;
         box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.6);
         
@@ -1064,11 +1222,11 @@ a {
     }
 }
 
-.grid{
-    column-count: 3;
-    // column-gap: 10px;
-    transition: 0.5s ease-in-out
-}
+// .grid{
+//     // column-count: 3;
+//     // column-gap: 3px;
+//     // transition: 0.5s ease-in-out
+// }
 
 //*********************HOME SECTION ONE START*******************************/
 

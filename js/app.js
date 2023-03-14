@@ -1,8 +1,6 @@
 const myBtn = document.querySelectorAll("#sect1 .big-box span")
 const myBox = document.querySelectorAll("#sect1 .big-box .boxes")
 
-
-
 for (let a = 0; a < myBtn.length; a++) {
     myBtn[a].addEventListener("click", function (e) {
         e.preventDefault();
@@ -13,6 +11,7 @@ for (let a = 0; a < myBtn.length; a++) {
         this.classList.add("clc-active")
     })
 }
+
 myBtn.forEach(element => {
     element.addEventListener("click", function () {
 
@@ -22,10 +21,6 @@ myBtn.forEach(element => {
         this.nextElementSibling.classList.add("active")
     })
 })
-
-
-
-
 
 var myBasket = document.querySelector(".first-head .head-right .basket")
 var headMyBoss = document.querySelector(".head-right-click")
@@ -41,9 +36,6 @@ myBasket.onclick = function () {
 
     }
 }
-
-
-
 
 var myClickIcon1 = document.querySelector(".responsive-right .icon1")
 var myClickIcon2 = document.querySelector(".responsive-right .icon2")
@@ -71,18 +63,14 @@ searchClickBig.addEventListener("click", function () {
     searchClickBig.classList.remove("sac-active")
 })
 
-
-
-
 const tabs = document.querySelectorAll("#section-top .tab")
 const items = document.querySelectorAll("#section-top .item")
 // const grids = document.querySelectorAll(".grid")
 
-
 tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-        // tabs.forEach(t => t.classList.remove("active"));
-        // tab.classList.add("active");
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
         const filter = tab.getAttribute("data-filter");
 
         items.forEach(item => {
@@ -94,3 +82,49 @@ tabs.forEach((tab) => {
         })
     })
 })
+
+let button = document.querySelector(".btn-scroll")
+button.onclick = () => window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+window.onscroll = () => window.scrollY > 500 ? button.style.transform.translateX("0px") : button.style.transform.translateX("-20px")
+
+var number1 = document.querySelector('.one-one')
+var number2 = document.querySelector('.one-two')
+var number3 = document.querySelector('.one-three')
+var number4 = document.querySelector('.one-four')
+
+number1.value = 0
+number2.value = 0
+number3.value = 0
+number4.value = 0
+setInterval(() => {
+    if (number1.value < 360) {
+        number1.value++
+        number1.innerHTML = number1.value + '+'
+    }
+}, 0);
+
+setInterval(() => {
+    if (number2.value < 650) {
+        number2.value++
+        number2.innerHTML = number2.value + '+'
+    }
+}, 0);
+
+setInterval(() => {
+    if (number3.value < 1200) {
+        number3.value++
+        number3.innerHTML = number3.value + '+'
+    }
+}, 0);
+
+setInterval(() => {
+    if (number4.value < 100) {
+        number4.value++
+        number4.innerHTML = number4.value + '%'
+    }
+}, 0);
+
+

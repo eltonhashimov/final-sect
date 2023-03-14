@@ -1,0 +1,239 @@
+#profile {
+    width: 100%;
+    padding: 6rem;
+    background-image: url(https://thepixelcurve.com/wp/lmsmart/lp/wp-content/uploads/sites/2/2021/12/REJ93.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    h1 {
+        color: #072F60;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .prof {
+        color: gray;
+        transition: 0.3s ease-in-out;
+    }
+
+    .homeprof {
+        color: gray;
+        transition: 0.3s ease-in-out;
+
+    }
+}
+
+.homeprof-active {
+    color: #3BBCA7 !important;
+}
+
+
+
+
+#log {
+    padding: 5rem 0;
+
+    .login {
+
+        padding: 0 0 13rem 0;
+        box-shadow: 0px 5px 10px rgb(190, 189, 189);
+
+        .login-one {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+
+            h3 {
+                color: #072F60;
+                line-height: 80px;
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            p {
+                color: rgb(105, 105, 105);
+                font-size: 16px;
+            }
+
+            input {
+                margin-bottom: 20px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 10px;
+                width: 100%;
+                background-color: rgb(240, 240, 240);
+            }
+
+            .inputs {
+                background-color: rgb(240, 240, 240);
+                width: 100%;
+                padding: 0;
+                border-radius: 5px;
+                position: relative;
+
+                .eyes-block {
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    color: rgb(94, 94, 94);
+                    position: absolute;
+                }
+
+                .eyes-active {
+                    display: none;
+                }
+
+                .eyes-open {
+                    position: absolute;
+                right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    color: rgb(94, 94, 94);
+                }
+
+                input {
+                    
+                    border: none;
+                    border-radius: 5px;
+                    margin: 0;
+                    width: 93%;
+                    background-color: rgb(240, 240, 240);
+                }
+            }
+
+            form {
+                #vehicle1 {
+                    width: 5%;
+                }
+
+                label {
+                    color: rgb(105, 105, 105);
+
+                }
+            }
+
+            .your {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #3BBCA7;
+                text-align: center;
+
+                a {
+
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .register {
+        padding: 0 0 4.5rem 0;
+
+        box-shadow: 0px 5px 10px rgb(190, 189, 189);
+
+        .register-one {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+
+            h3 {
+                color: #072F60;
+                line-height: 80px;
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            p {
+                color: rgb(105, 105, 105);
+                font-size: 16px;
+            }
+
+            input {
+                margin-bottom: 20px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 10px;
+                width: 100%;
+                background-color: rgb(240, 240, 240);
+            }
+
+            .inputs {
+
+                background-color: rgb(240, 240, 240);
+                width: 100%;
+                padding: 0;
+                border-radius: 5px;
+                position: relative;
+
+                .eyes-block {
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    color: rgb(94, 94, 94);
+                    position: absolute;
+                }
+
+                .eyes-active {
+                    display: none;
+                }
+
+                .eyes-open {
+                    position: absolute;
+                right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    color: rgb(94, 94, 94);
+                }
+
+                input {
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    margin: 0;
+                    width: 93%;
+                    background-color: rgb(240, 240, 240);
+                }
+            }
+            form {
+                #vehicle1 {
+                    width: 5%;
+                }
+
+                label {
+                    color: rgb(105, 105, 105);
+
+                }
+            }
+
+            .your {
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #3BBCA7;
+                text-align: center;
+
+                a {
+
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}
